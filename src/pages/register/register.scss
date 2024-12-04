@@ -1,0 +1,132 @@
+@mixin btn{
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background-color: #0C389F;
+  border: none;
+  width: 8rem;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 0.6rem;
+}
+
+.register{
+  height: calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1578852612716-854e527abf2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+  background-size:cover;
+  opacity: 0.9;
+  font-family: "Varela Round",serif;
+
+  .title{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Lora",serif;
+  }
+
+  .registerForm{
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    label{
+      margin: 0.7rem 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      
+    }
+  }
+
+  .registerInput{
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    width: 20rem;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border: none;
+  }
+
+  .loginButton{
+    @include btn;
+  }
+
+  .loginPara{
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .loginButton{
+    @include btn
+  }
+
+}
+
+@mixin btn{
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background-color: #0C389F;
+  border: none;
+  width: 8rem;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 0.6rem;
+}
+
+.register{
+  height: calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1452423668729-43a98052d3ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-size:cover;
+  opacity: 0.9;
+  font-family: "Varela Round",serif;
+
+  .title{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Lora",serif;
+  }
+
+  .registerForm{
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    label{
+      margin: 0.7rem 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      
+    }
+  }
+
+  .registerInput{
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    width: 20rem;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border: none;
+  }
+
+  .registerButton{
+    @include btn;
+  }
+
+  .registerPara{
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .registerButton{
+    @include btn
+  }
+
+}
+
