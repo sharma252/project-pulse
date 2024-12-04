@@ -1,11 +1,12 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { User, PenTool } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Function to check if the current link matches the current path
   const isActive = (path) => {
@@ -41,10 +42,14 @@ const Header = () => {
             </Link>
           </Nav>
           <div className="d-flex">
-            <Button variant="outline-primary" className="me-2">
+            <Button
+              variant="outline-primary"
+              className="me-2"
+              onClick={() => navigate("/login")}
+            >
               <User size={18} /> Login
             </Button>
-            <Button variant="primary">
+            <Button variant="primary" onClick={() => navigate("/write")}>
               <PenTool size={18} className="me-2" /> Write
             </Button>
           </div>

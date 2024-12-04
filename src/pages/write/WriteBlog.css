@@ -1,0 +1,56 @@
+/* Container */
+.write-blog-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Title */
+.write-blog-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Form Labels */
+.form-label-custom {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+/* Form Inputs */
+.input-custom {
+  border-radius: 0.5rem;
+  border: 1px solid #dcdde1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-custom:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Publish Button */
+button {
+  background-color: #3498db;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
